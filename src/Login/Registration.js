@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { URL, registrationURL } from "../Settings/Settings";
+import { URL, registrationEP } from "../Settings/Settings";
 import facade from "../REST/RESTFacade";
 
 export default function Registration() {
@@ -20,7 +20,7 @@ export default function Registration() {
     function submitHandler(event) {
         const body = { username: user.username, password: user.password };
         // const jsonBody = JSON.stringify(body);
-        facade.postCall(URL, registrationURL, body).then((data) => setResponseData(data)
+        facade.postCall(URL, registrationEP, body).then((data) => setResponseData(data)
             .catch((err) => {
                 setResponseData(err.status);
             })
