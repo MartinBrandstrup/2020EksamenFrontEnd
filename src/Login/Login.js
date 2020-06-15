@@ -18,7 +18,7 @@ function LogIn({ login }) {
   };
 
   return (
-    <p class="login">
+    <p className="login">
       <h2>Login</h2>
       <form onChange={onChange}>
         <input placeholder="User Name" id="username" />
