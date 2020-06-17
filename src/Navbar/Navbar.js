@@ -13,7 +13,7 @@ import {
 import "./navStyle.css";
 import facade from "../Login/ApiFacade"
 
-import JokesComp from "./Components/JokesComp";
+import RestaurantPlannerComp from "./Components/RestaurantPlannerComp";
 import HomeComp from "./Components/HomeComp";
 import Login from "../Login/Login";
 
@@ -36,8 +36,8 @@ export default function Navbar() {
                 <Route exact path="/">
                     <HomeComp />
                 </Route>
-                <Route path="/jokes">
-                    <JokesComp 
+                <Route path="/restaurant-planner">
+                    <RestaurantPlannerComp
                         isLoggedIn={isLoggedIn}
                     />
                 </Route>
@@ -63,7 +63,7 @@ function Header({ isLoggedIn, loginMsg }) {
             {isLoggedIn && (
                 <React.Fragment>
                     <li>
-                        <NavLink activeClassName="active" to="/jokes">Jokes</NavLink>
+                        <NavLink activeClassName="active" to="/restaurant-planner">Restaurant Planner</NavLink>
                     </li>
                 </React.Fragment>
             )}

@@ -29,7 +29,7 @@ export default function Registration() {
 
     return (
         <>
-            <div class="register">
+            <div className="register">
                 <h3>Register a new account</h3>
                 <p>
                     Username:{" "}
@@ -59,7 +59,7 @@ export default function Registration() {
                 )}
                 {responseData === 500 && (
                     <>
-                        <p>Something went wrong, please try again later</p>
+                        <p>Something went wrong, please try again or contact tech support</p>
                     </>
                 )}
             </div>

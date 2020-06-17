@@ -16,6 +16,6 @@ const registrationEP = "/api/register/user";
 /*
 Add custom endpoints here for REST endpoints. Called in 'Navbar/Components'.
 */
-const jokesEP = "/api/jokes/1/1";
+const ingredientsEP = "/api/ingredient";
 
-export { URL, userDataEP, loginEP, jokesEP, registrationEP };
+export { URL, userDataEP, loginEP, registrationEP, ingredientsEP };

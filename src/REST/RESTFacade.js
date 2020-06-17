@@ -7,7 +7,6 @@ function RESTFacade() {
         return fetch(URL + endpointURL, options).then(loginFacade.handleHttpErrors);
       };
 
-      // this function is merely proof-of-concept and has not been tested
       const postCall = (URL, endpointURL, body) => {
         const options = loginFacade.makeOptions("POST", true, body);
         return fetch(URL + endpointURL, options).then(loginFacade.handleHttpErrors);
